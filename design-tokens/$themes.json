@@ -4,9 +4,7 @@
     "name": "default",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "primitives/size/medium": "enabled",
-      "primitives/size/large": "disabled",
-      "primitives/size/small": "disabled"
+      "primitives/size/medium": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36248:20757",
     "$figmaModeId": "36248:0",
@@ -29,11 +27,7 @@
     "id": "fb11567729c298ca37c9da4e3a27716a23480824",
     "name": "compact",
     "$figmaStyleReferences": {},
-    "selectedTokenSets": {
-      "primitives/size/medium": "disabled",
-      "primitives/size/large": "disabled",
-      "primitives/size/small": "disabled"
-    },
+    "selectedTokenSets": {},
     "$figmaCollectionId": "VariableCollectionId:36248:20757",
     "$figmaModeId": "36248:1",
     "$figmaVariableReferences": {
@@ -60,10 +54,7 @@
       "primitives/modes/colors/light/theme": "enabled",
       "primitives/modes/colors/light/theme2": "enabled",
       "primitives/modes/colors/light/theme3": "enabled",
-      "primitives/modes/colors/light/theme4": "enabled",
-      "primitives/size/medium": "disabled",
-      "primitives/size/large": "disabled",
-      "primitives/size/small": "disabled"
+      "primitives/modes/colors/light/theme4": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:34811:5472",
     "$figmaModeId": "34811:0",
@@ -470,10 +461,7 @@
       "primitives/modes/colors/dark/theme": "enabled",
       "primitives/modes/colors/dark/theme2": "enabled",
       "primitives/modes/colors/dark/theme3": "enabled",
-      "primitives/modes/colors/dark/theme4": "enabled",
-      "primitives/size/medium": "disabled",
-      "primitives/size/large": "disabled",
-      "primitives/size/small": "disabled"
+      "primitives/modes/colors/dark/theme4": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:34811:5472",
     "$figmaModeId": "34811:1",
@@ -879,10 +867,7 @@
       "primitives/modes/typography/primary/theme": "enabled",
       "primitives/modes/typography/primary/theme2": "enabled",
       "primitives/modes/typography/primary/theme3": "enabled",
-      "primitives/modes/typography/primary/theme4": "enabled",
-      "primitives/size/medium": "disabled",
-      "primitives/size/large": "disabled",
-      "primitives/size/small": "disabled"
+      "primitives/modes/typography/primary/theme4": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36248:20769",
     "$figmaModeId": "36248:2",
@@ -914,10 +899,7 @@
       "primitives/modes/typography/secondary/theme": "enabled",
       "primitives/modes/typography/secondary/theme2": "enabled",
       "primitives/modes/typography/secondary/theme3": "enabled",
-      "primitives/modes/typography/secondary/theme4": "enabled",
-      "primitives/size/medium": "disabled",
-      "primitives/size/large": "disabled",
-      "primitives/size/small": "disabled"
+      "primitives/modes/typography/secondary/theme4": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36248:20769",
     "$figmaModeId": "36248:3",
@@ -946,10 +928,7 @@
     "name": "digdir",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "themes/theme": "enabled",
-      "primitives/size/medium": "disabled",
-      "primitives/size/large": "disabled",
-      "primitives/size/small": "disabled"
+      "themes/theme": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36329:62335",
     "$figmaModeId": "36329:4",
@@ -1041,10 +1020,7 @@
     "name": "altinn",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "themes/theme2": "enabled",
-      "primitives/size/medium": "disabled",
-      "primitives/size/large": "disabled",
-      "primitives/size/small": "disabled"
+      "themes/theme2": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36329:62335",
     "$figmaModeId": "36329:5",
@@ -1136,10 +1112,7 @@
     "name": "uutilsynet",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "themes/theme3": "enabled",
-      "primitives/size/medium": "disabled",
-      "primitives/size/large": "disabled",
-      "primitives/size/small": "disabled"
+      "themes/theme3": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36329:62335",
     "$figmaModeId": "36329:6",
@@ -1570,10 +1543,7 @@
       "shadow.xl": "S:12d1833dd64569353680aa00c9d340d6f770698f,"
     },
     "selectedTokenSets": {
-      "themes/theme4": "enabled",
-      "primitives/size/medium": "disabled",
-      "primitives/size/large": "disabled",
-      "primitives/size/small": "disabled"
+      "themes/theme4": "enabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36329:62335",
     "$figmaModeId": "36329:7",
@@ -1699,10 +1669,7 @@
     "selectedTokenSets": {
       "semantic/style": "enabled",
       "semantic/color": "enabled",
-      "primitives/globals": "source",
-      "primitives/size/medium": "disabled",
-      "primitives/size/large": "disabled",
-      "primitives/size/small": "disabled"
+      "primitives/globals": "source"
     },
     "$figmaCollectionId": "VariableCollectionId:34811:5976",
     "$figmaModeId": "34811:5",
@@ -1717,42 +1684,7 @@
       "border-radius.4xl": "02b3a1d2f7da8148195447afade3707876c8be19",
       "border-radius.full": "402d1c89e9770719d5da3e2379344604f3021569",
       "spacing.0": "fc789f9fa08a555a4338d53405faa463dfa51689",
-      "spacing.1": "f81609d4dc6bf19d758713001ca33e4e21acbd7a",
-      "spacing.2": "d82d6e63323d5e1f85f5fd1aa54eceeb5ff2a2f3",
-      "spacing.4": "c5a4e25af9039b4acad5cbcb0e94a943749581fa",
-      "spacing.5": "40212f8732f50e07f964501e0b1cac6a048fc4b3",
-      "spacing.7": "de02657f819059c9662e0483cb5c72a791c92d54",
-      "spacing.8": "4f7fe750dcd834dff2fe3e078e6e0254075ff964",
-      "spacing.9": "1bd207f4b560e03eda66f4e5eaa1d19c0bbb9e96",
-      "spacing.11": "f3c977fecf87ba580b25064e561ace2a83a5cbbf",
-      "spacing.12": "2b0132c4846c3a9b2862d9f329cfb2d89a770389",
-      "spacing.13": "1bbc0e046202b27851a43a8a1a3f5fa3563055e3",
-      "spacing.14": "3c4f5e0d3c9bf5bae8d4ec4e80aa6870fb981949",
-      "spacing.15": "4c422183731c26d1b23374de723ff8dd33d6aef9",
-      "spacing.18": "bae761488a8ed986d6f16f5c85d4b0288adfaf9d",
-      "spacing.22": "47e296f76dddf426d3bee3ee57b396b8e92c0d80",
-      "spacing.26": "76c0b07e99cf5c17c6fcbaac3647d5252eacc47e",
-      "spacing.30": "0b93c3be3be96b775da6124c0ecedf204c9932ee",
       "sizing.0": "0bfae9839e97fb781011b375b2989c0a008b2926",
-      "sizing.1": "7fc2e57eb7ded152643f4ade413e869f4a214a47",
-      "sizing.2": "2d0a58bf3c81352b74a34ebbd611548cdb2272b7",
-      "sizing.3": "5009660a30c96488347ce9d7b94394bbe39d5905",
-      "sizing.4": "e8d58ae6810755487b782187c9691e201d1eb983",
-      "sizing.5": "542fe70a17972f40dc49d18dc7aadf4875126e0c",
-      "sizing.6": "567efe7ca0b8770bf54794808463231d34aaaeb3",
-      "sizing.7": "c39fb992ed34f572ee86c8beec208269e5db1bb5",
-      "sizing.8": "facf189ce70035a4e4ee3fb01e2c3befa670f902",
-      "sizing.9": "a7d15015cd1186905eaa58d7d81c1e250be88d8a",
-      "sizing.10": "49e7167c90caa65bb4b3417f0bc4b0ad37369e2c",
-      "sizing.11": "f4384af9689b97ce7c5e4d793bb49c41ee7c5612",
-      "sizing.12": "f1c93cbcc8f16d18aa43d6aa834aad56625c71d1",
-      "sizing.13": "57b58c97b74b1909c0cb7cab45889f4059631034",
-      "sizing.14": "e9bc584fdd894132bbed815c612167a72f251d3c",
-      "sizing.15": "e754e5ea2bd68fa728d0b8dc37502d01caa073b9",
-      "sizing.18": "c51587654660af6561cb244bbc1a7a6461321cfe",
-      "sizing.22": "9477b31528ea339ae1350b93a50987e5afc92b76",
-      "sizing.26": "42a8170ee551cacaf2e833e6576f271ddbf7b0ab",
-      "sizing.30": "49baf0928082114475f780cb1496f14ed43d29c6",
       "border-width.default": "ac5b6181d17de3d25249c91674dce4fef8711216",
       "border-width.highlight": "dd40bb1cb729138762c0bfa29d26adb58b726354",
       "color.accent.background-default": "66c251d95021cbe5b4637c3a5ae207332f5837cc",
@@ -1891,7 +1823,42 @@
       "color.warning.contrast-default": "3d38f3079fb9fd155567ec24c7fde25f68c40f42",
       "color.warning.contrast-subtle": "efb708d66f25610b35df2fe9bd9088e80e31a0a3",
       "color.focus.inner": "1ec8f76f658042889b1eb4b08f3ce9bca1b7e603",
-      "color.focus.outer": "09e04f0bfff8fdc309db58a0131b5d07dae6b4f8"
+      "color.focus.outer": "09e04f0bfff8fdc309db58a0131b5d07dae6b4f8",
+      "spacing-scale.1": "f81609d4dc6bf19d758713001ca33e4e21acbd7a",
+      "spacing-scale.2": "d82d6e63323d5e1f85f5fd1aa54eceeb5ff2a2f3",
+      "spacing-scale.4": "c5a4e25af9039b4acad5cbcb0e94a943749581fa",
+      "spacing-scale.5": "40212f8732f50e07f964501e0b1cac6a048fc4b3",
+      "spacing-scale.7": "de02657f819059c9662e0483cb5c72a791c92d54",
+      "spacing-scale.8": "4f7fe750dcd834dff2fe3e078e6e0254075ff964",
+      "spacing-scale.9": "1bd207f4b560e03eda66f4e5eaa1d19c0bbb9e96",
+      "spacing-scale.11": "f3c977fecf87ba580b25064e561ace2a83a5cbbf",
+      "spacing-scale.12": "2b0132c4846c3a9b2862d9f329cfb2d89a770389",
+      "spacing-scale.13": "1bbc0e046202b27851a43a8a1a3f5fa3563055e3",
+      "spacing-scale.14": "3c4f5e0d3c9bf5bae8d4ec4e80aa6870fb981949",
+      "spacing-scale.15": "4c422183731c26d1b23374de723ff8dd33d6aef9",
+      "spacing-scale.18": "bae761488a8ed986d6f16f5c85d4b0288adfaf9d",
+      "spacing-scale.22": "47e296f76dddf426d3bee3ee57b396b8e92c0d80",
+      "spacing-scale.26": "76c0b07e99cf5c17c6fcbaac3647d5252eacc47e",
+      "spacing-scale.30": "0b93c3be3be96b775da6124c0ecedf204c9932ee",
+      "sizing-scale.1": "7fc2e57eb7ded152643f4ade413e869f4a214a47",
+      "sizing-scale.2": "2d0a58bf3c81352b74a34ebbd611548cdb2272b7",
+      "sizing-scale.3": "5009660a30c96488347ce9d7b94394bbe39d5905",
+      "sizing-scale.4": "e8d58ae6810755487b782187c9691e201d1eb983",
+      "sizing-scale.5": "542fe70a17972f40dc49d18dc7aadf4875126e0c",
+      "sizing-scale.6": "567efe7ca0b8770bf54794808463231d34aaaeb3",
+      "sizing-scale.7": "c39fb992ed34f572ee86c8beec208269e5db1bb5",
+      "sizing-scale.8": "facf189ce70035a4e4ee3fb01e2c3befa670f902",
+      "sizing-scale.9": "a7d15015cd1186905eaa58d7d81c1e250be88d8a",
+      "sizing-scale.10": "49e7167c90caa65bb4b3417f0bc4b0ad37369e2c",
+      "sizing-scale.11": "f4384af9689b97ce7c5e4d793bb49c41ee7c5612",
+      "sizing-scale.12": "f1c93cbcc8f16d18aa43d6aa834aad56625c71d1",
+      "sizing-scale.13": "57b58c97b74b1909c0cb7cab45889f4059631034",
+      "sizing-scale.14": "e9bc584fdd894132bbed815c612167a72f251d3c",
+      "sizing-scale.15": "e754e5ea2bd68fa728d0b8dc37502d01caa073b9",
+      "sizing-scale.18": "c51587654660af6561cb244bbc1a7a6461321cfe",
+      "sizing-scale.22": "9477b31528ea339ae1350b93a50987e5afc92b76",
+      "sizing-scale.26": "42a8170ee551cacaf2e833e6576f271ddbf7b0ab",
+      "sizing-scale.30": "49baf0928082114475f780cb1496f14ed43d29c6"
     },
     "group": "Semantic"
   }
