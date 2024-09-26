@@ -368,165 +368,165 @@
   "spacing": {
     "0": {
       "$type": "spacing",
-      "$value": "{spacing.1}*0"
+      "$value": "{spacing-scale.1}*0"
     },
     "1": {
       "$type": "spacing",
-      "$value": "{spacing.1}"
+      "$value": "{spacing-scale.1}"
     },
     "2": {
       "$type": "spacing",
-      "$value": "{spacing.2}"
+      "$value": "{spacing-scale.2}"
     },
     "3": {
       "$type": "spacing",
-      "$value": "{spacing.3}"
+      "$value": "{spacing-scale.3}"
     },
     "4": {
       "$type": "spacing",
-      "$value": "{spacing.4}"
+      "$value": "{spacing-scale.4}"
     },
     "5": {
       "$type": "spacing",
-      "$value": "{spacing.5}"
+      "$value": "{spacing-scale.5}"
     },
     "6": {
       "$type": "spacing",
-      "$value": "{spacing.6}"
+      "$value": "{spacing-scale.6}"
     },
     "7": {
       "$type": "spacing",
-      "$value": "{spacing.7}"
+      "$value": "{spacing-scale.7}"
     },
     "8": {
       "$type": "spacing",
-      "$value": "{spacing.8}"
+      "$value": "{spacing-scale.8}"
     },
     "9": {
       "$type": "spacing",
-      "$value": "{spacing.9}"
+      "$value": "{spacing-scale.9}"
     },
     "10": {
       "$type": "spacing",
-      "$value": "{spacing.10}"
+      "$value": "{spacing-scale.10}"
     },
     "11": {
       "$type": "spacing",
-      "$value": "{spacing.11}"
+      "$value": "{spacing-scale.11}"
     },
     "12": {
       "$type": "spacing",
-      "$value": "{spacing.12}"
+      "$value": "{spacing-scale.12}"
     },
     "13": {
       "$type": "spacing",
-      "$value": "{spacing.13}"
+      "$value": "{spacing-scale.13}"
     },
     "14": {
       "$type": "spacing",
-      "$value": "{spacing.14}"
+      "$value": "{spacing-scale.14}"
     },
     "15": {
       "$type": "spacing",
-      "$value": "{spacing.15}"
+      "$value": "{spacing-scale.15}"
     },
     "18": {
       "$type": "spacing",
-      "$value": "{spacing.18}"
+      "$value": "{spacing-scale.18}"
     },
     "22": {
       "$type": "spacing",
-      "$value": "{spacing.22}"
+      "$value": "{spacing-scale.22}"
     },
     "26": {
       "$type": "spacing",
-      "$value": "{spacing.26}"
+      "$value": "{spacing-scale.26}"
     },
     "30": {
       "$type": "spacing",
-      "$value": "{spacing.30}"
+      "$value": "{spacing-scale.30}"
     }
   },
   "sizing": {
     "0": {
       "$type": "sizing",
-      "$value": "{sizing.1}*0"
+      "$value": "{sizing-scale.1}*0"
     },
     "1": {
       "$type": "sizing",
-      "$value": "{sizing.1}"
+      "$value": "{sizing-scale.1}"
     },
     "2": {
       "$type": "sizing",
-      "$value": "{sizing.2}"
+      "$value": "{sizing-scale.2}"
     },
     "3": {
       "$type": "sizing",
-      "$value": "{sizing.3}"
+      "$value": "{sizing-scale.3}"
     },
     "4": {
       "$type": "sizing",
-      "$value": "{sizing.4}"
+      "$value": "{sizing-scale.4}"
     },
     "5": {
       "$type": "sizing",
-      "$value": "{sizing.5}"
+      "$value": "{sizing-scale.5}"
     },
     "6": {
       "$type": "sizing",
-      "$value": "{sizing.6}"
+      "$value": "{sizing-scale.6}"
     },
     "7": {
       "$type": "sizing",
-      "$value": "{sizing.7}"
+      "$value": "{sizing-scale.7}"
     },
     "8": {
       "$type": "sizing",
-      "$value": "{sizing.8}"
+      "$value": "{sizing-scale.8}"
     },
     "9": {
       "$type": "sizing",
-      "$value": "{sizing.9}"
+      "$value": "{sizing-scale.9}"
     },
     "10": {
       "$type": "sizing",
-      "$value": "{sizing.10}"
+      "$value": "{sizing-scale.10}"
     },
     "11": {
       "$type": "sizing",
-      "$value": "{sizing.11}"
+      "$value": "{sizing-scale.11}"
     },
     "12": {
       "$type": "sizing",
-      "$value": "{sizing.12}"
+      "$value": "{sizing-scale.12}"
     },
     "13": {
       "$type": "sizing",
-      "$value": "{sizing.13}"
+      "$value": "{sizing-scale.13}"
     },
     "14": {
       "$type": "sizing",
-      "$value": "{sizing.14}"
+      "$value": "{sizing-scale.14}"
     },
     "15": {
       "$type": "sizing",
-      "$value": "{sizing.15}"
+      "$value": "{sizing-scale.15}"
     },
     "18": {
       "$type": "sizing",
-      "$value": "{sizing.18}"
+      "$value": "{sizing-scale.18}"
     },
     "22": {
       "$type": "sizing",
-      "$value": "{sizing.22}"
+      "$value": "{sizing-scale.22}"
     },
     "26": {
       "$type": "sizing",
-      "$value": "{sizing.26}"
+      "$value": "{sizing-scale.26}"
     },
     "30": {
       "$type": "sizing",
-      "$value": "{sizing.30}"
+      "$value": "{sizing-scale.30}"
     }
   },
   "border-width": {
