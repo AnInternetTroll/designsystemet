@@ -24,22 +24,22 @@ const ComboboxLabel = ({
 }: ComboboxLabelProps) => {
   return (
     <>
-      {label && (
+      {label ? (
         <Label
           size={size}
           htmlFor={formFieldProps.inputProps.id}
           className={cl('ds-combobox__label', hideLabel && `ds-sr-only`)}
         >
-          {readOnly && (
+          {readOnly ? (
             <PadlockLockedFillIcon
               aria-hidden
               className={'ds-combobox__readonly__icon'}
             />
-          )}
+          ) : null}
           {label}
         </Label>
-      )}
-      {description && (
+      ) : null}
+      {description ? (
         <Paragraph asChild size={size}>
           <div
             id={formFieldProps.descriptionId}
@@ -51,7 +51,7 @@ const ComboboxLabel = ({
             {description}
           </div>
         </Paragraph>
-      )}
+      ) : null}
     </>
   );
 };

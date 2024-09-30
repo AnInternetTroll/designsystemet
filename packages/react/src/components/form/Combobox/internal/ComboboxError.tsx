@@ -16,7 +16,9 @@ const ComboboxError = ({ size, error, formFieldProps }: ComboboxErrorProps) => {
       aria-live='polite'
       aria-relevant='additions removals'
     >
-      {error && <ValidationMessage size={size}>{error}</ValidationMessage>}
+      {error ? (
+        <ValidationMessage size={size}>{error}</ValidationMessage>
+      ) : null}
     </div>
   );
 };

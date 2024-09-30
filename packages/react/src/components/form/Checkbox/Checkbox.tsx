@@ -62,7 +62,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
             disabled={inputProps.disabled}
             aria-checked={rest.indeterminate ? 'mixed' : inputProps.checked}
           />
-          {children && (
+          {children ? (
             <>
               <Label
                 className={cl(`ds-checkbox__label`)}
@@ -72,7 +72,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
               >
                 <span>{children}</span>
               </Label>
-              {description && (
+              {description ? (
                 <Paragraph asChild size={size}>
                   <div
                     id={descriptionId}
@@ -81,9 +81,9 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
                     {description}
                   </div>
                 </Paragraph>
-              )}
+              ) : null}
             </>
-          )}
+          ) : null}
         </div>
       </Paragraph>
     );

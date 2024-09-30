@@ -17,19 +17,17 @@ const ComboboxEmpty = forwardRef<HTMLDivElement, ComboboxEmptyProps>(
 
     const { filteredOptions, size } = context;
 
-    return (
-      filteredOptions.length === 0 && (
-        <Label size={size} asChild>
-          <div
-            ref={ref}
-            className={cl('ds-combobox__empty', className)}
-            {...rest}
-          >
-            {children}
-          </div>
-        </Label>
-      )
-    );
+    return filteredOptions.length === 0 ? (
+      <Label size={size} asChild>
+        <div
+          ref={ref}
+          className={cl('ds-combobox__empty', className)}
+          {...rest}
+        >
+          {children}
+        </div>
+      </Label>
+    ) : null;
   },
 );
 

@@ -377,13 +377,13 @@ export const ComboboxComponent = forwardRef<HTMLInputElement, ComboboxProps>(
           ref={portalRef}
         >
           {/* This is only for the Combobox to work in forms */}
-          {name && (
+          {name ? (
             <ComboboxNative
               name={name}
               selectedOptions={selectedOptions}
               multiple={multiple}
             />
-          )}
+          ) : null}
 
           <ComboboxLabel
             label={label}
@@ -409,7 +409,7 @@ export const ComboboxComponent = forwardRef<HTMLInputElement, ComboboxProps>(
           />
         </div>
         {/* This is the floating list with options */}
-        {open && (
+        {open ? (
           <FloatingPortal root={portal ? null : portalRef}>
             <FloatingFocusManager
               context={context}
@@ -432,7 +432,7 @@ export const ComboboxComponent = forwardRef<HTMLInputElement, ComboboxProps>(
                   `ds-combobox--${size}`,
                 )}
               >
-                {virtual && (
+                {virtual ? (
                   <div
                     style={{
                       height: `${rowVirtualizer.getTotalSize()}px`,
@@ -458,7 +458,7 @@ export const ComboboxComponent = forwardRef<HTMLInputElement, ComboboxProps>(
                       </div>
                     ))}
                   </div>
-                )}
+                ) : null}
 
                 {loading ? (
                   <ComboboxCustom className={'ds-combobox__loading'}>
@@ -469,13 +469,13 @@ export const ComboboxComponent = forwardRef<HTMLInputElement, ComboboxProps>(
                   <>
                     {/* Add the rest of the children */}
                     {restChildren}
-                    {!virtual && filteredOptionsChildren}
+                    {!virtual ? filteredOptionsChildren : null}
                   </>
                 )}
               </div>
             </FloatingFocusManager>
           </FloatingPortal>
-        )}
+        ) : null}
       </ComboboxContext.Provider>
     );
   },
