@@ -60,7 +60,7 @@
       "sizing-scale.22": "07d839dbedc67bd7397eccb55c77887e6cdd59eb",
       "sizing-scale.26": "63cda43068ef29f10993fc333c0ce0194b381a02",
       "sizing-scale.30": "2adbf1fb49ae41b4907c33a12a558e7bdd398331",
-      "sizing-scale.sizing-scale": "0d3d8798ea1a2e08ddf5867553154e3d8a956ed3"
+      "sizing-scale.sizing-scale-base": "0d3d8798ea1a2e08ddf5867553154e3d8a956ed3"
     },
     "group": "Size"
   },
@@ -125,7 +125,7 @@
       "sizing-scale.22": "07d839dbedc67bd7397eccb55c77887e6cdd59eb",
       "sizing-scale.26": "63cda43068ef29f10993fc333c0ce0194b381a02",
       "sizing-scale.30": "2adbf1fb49ae41b4907c33a12a558e7bdd398331",
-      "sizing-scale.sizing-scale": "0d3d8798ea1a2e08ddf5867553154e3d8a956ed3"
+      "sizing-scale.sizing-scale-base": "0d3d8798ea1a2e08ddf5867553154e3d8a956ed3"
     },
     "group": "Size"
   },
@@ -2016,7 +2016,7 @@
       "sizing-scale.22": "07d839dbedc67bd7397eccb55c77887e6cdd59eb",
       "sizing-scale.26": "63cda43068ef29f10993fc333c0ce0194b381a02",
       "sizing-scale.30": "2adbf1fb49ae41b4907c33a12a558e7bdd398331",
-      "sizing-scale.sizing-scale": "0d3d8798ea1a2e08ddf5867553154e3d8a956ed3"
+      "sizing-scale.sizing-scale-base": "0d3d8798ea1a2e08ddf5867553154e3d8a956ed3"
     }
   }
 ]
