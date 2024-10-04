@@ -104,83 +104,83 @@
   "spacing-scale": {
     "1": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 1 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *1)"
+      "$value": "({spacing-scale.spacing-scale} - {spacing-scale.spacing-adjust}) * 1 + {spacing-scale.spacing-adjust}"
     },
     "2": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 2 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *2)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust}) * 2 + {spacing-scale.spacing-adjust}"
     },
     "3": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 3 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *3)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 3 + {spacing-scale.spacing-adjust}"
     },
     "4": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 4 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *4)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 4 + {spacing-scale.spacing-adjust}"
     },
     "5": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 5 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *5)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 5 + {spacing-scale.spacing-adjust}"
     },
     "6": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 6 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *6)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 6 + {spacing-scale.spacing-adjust}"
     },
     "7": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 7 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *7)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 7 + {spacing-scale.spacing-adjust}"
     },
     "8": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 8 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *8)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 8 + {spacing-scale.spacing-adjust}"
     },
     "9": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 9 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *9)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 9 + {spacing-scale.spacing-adjust}"
     },
     "10": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 10 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *10)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 10 + {spacing-scale.spacing-adjust}"
     },
     "11": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 11 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *11)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 11 + {spacing-scale.spacing-adjust}"
     },
     "12": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 12 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *12)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 12 + {spacing-scale.spacing-adjust}"
     },
     "13": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 13 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *13)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 13 + {spacing-scale.spacing-adjust}"
     },
     "14": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 14 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *14)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 14 + {spacing-scale.spacing-adjust}"
     },
     "15": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 15 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *15)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 15 + {spacing-scale.spacing-adjust}"
     },
     "18": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 18 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *18)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 18 + {spacing-scale.spacing-adjust}"
     },
     "22": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 22 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *22)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 22 + {spacing-scale.spacing-adjust}"
     },
     "26": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 26 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *26)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 26 + {spacing-scale.spacing-adjust}"
     },
     "30": {
       "$type": "spacing",
-      "$value": "max( {spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust} * 30 + {spacing-scale.spacing-adjust} , {spacing-scale.spacing-scale-min} *30)"
+      "$value": "({spacing-scale.spacing-scale}  - {spacing-scale.spacing-adjust})* 30 + {spacing-scale.spacing-adjust}"
     },
     "spacing-scale-base": {
       "$type": "spacing",
-      "$value": "({font-size.5})"
+      "$value": "18"
     },
     "spacing-scale-min": {
       "$type": "spacing",
@@ -188,93 +188,93 @@
     },
     "spacing-adjust": {
       "$type": "spacing",
-      "$value": "roundTo(({spacing-scale.spacing-scale-base}  - ({font-size.5}) * 0.5))"
+      "$value": "roundTo(({sizing-scale.sizing-scale-base}  - {font-size.font-size}) * 0.5)"
     },
     "spacing-scale": {
       "$type": "spacing",
-      "$value": "({font-size.font-size}/4)"
+      "$value": "4"
     }
   },
   "sizing-scale": {
     "1": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 1 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *1)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 1 + {sizing-scale.sizing-adjust}"
     },
     "2": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 2 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *2)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 2 + {sizing-scale.sizing-adjust}"
     },
     "3": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 3 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *3)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 3 + {sizing-scale.sizing-adjust}"
     },
     "4": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 4 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *4)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 4 + {sizing-scale.sizing-adjust}"
     },
     "5": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 5 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *5)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 5 + {sizing-scale.sizing-adjust}"
     },
     "6": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 6 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *6)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 6 + {sizing-scale.sizing-adjust}"
     },
     "7": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 7 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *7)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 7 + {sizing-scale.sizing-adjust}"
     },
     "8": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 8 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *8)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 8 + {sizing-scale.sizing-adjust}"
     },
     "9": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 9 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *9)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 9 + {sizing-scale.sizing-adjust}"
     },
     "10": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 10 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *10)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 10 + {sizing-scale.sizing-adjust}"
     },
     "11": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 11 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *11)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 11 + {sizing-scale.sizing-adjust}"
     },
     "12": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 12 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *12)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 12 + {sizing-scale.sizing-adjust}"
     },
     "13": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 13 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *13)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 13 + {sizing-scale.sizing-adjust}"
     },
     "14": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 14 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *14)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 14 + {sizing-scale.sizing-adjust}"
     },
     "15": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 15 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *15)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 15 + {sizing-scale.sizing-adjust}"
     },
     "18": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 18 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *18)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 18 + {sizing-scale.sizing-adjust}"
     },
     "22": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 22 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *22)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 22 + {sizing-scale.sizing-adjust}"
     },
     "26": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 26 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *26)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 26 + {sizing-scale.sizing-adjust}"
     },
     "30": {
       "$type": "sizing",
-      "$value": "max( {sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust} * 30 + {sizing-scale.sizing-adjust} , {sizing-scale.sizing-scale-min} *30)"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 30 + {sizing-scale.sizing-adjust}"
     },
     "sizing-scale-base": {
       "$type": "sizing",
-      "$value": "({font-size.5})"
+      "$value": "18"
     },
     "sizing-scale-min": {
       "$type": "sizing",
@@ -282,11 +282,11 @@
     },
     "sizing-adjust": {
       "$type": "sizing",
-      "$value": "roundTo(({sizing-scale.sizing-scale-base}  - ({font-size.5}) * 0.5))"
+      "$value": "roundTo(({sizing-scale.sizing-scale-base}  - {font-size.font-size}) * 0.5)"
     },
     "sizing-scale": {
       "$type": "sizing",
-      "$value": "({font-size.font-size}/4)"
+      "$value": "4"
     }
   }
 }
