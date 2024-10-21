@@ -4,7 +4,8 @@
     "name": "medium",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "primitives/size/medium": "enabled"
+      "primitives/size/medium": "enabled",
+      "primitives/size/extra-large": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36248:20757",
     "$figmaModeId": "36248:0",
@@ -40,6 +41,9 @@
       "spacing-scale.22": "9874e9862d3fa9146fa76e4999f8e95c1422bf4c",
       "spacing-scale.26": "857ee1450bb913e6fffad941cff08288c4b78c4a",
       "spacing-scale.30": "2a21baa3250c374b531e8a6de969ce6fe08233c8",
+      "spacing-scale.spacing-scale-base": "ab8e94510bbc90da7b24bea99bfe11bea4df7433",
+      "spacing-scale.spacing-scale-min": "251911275a3762405e8ba7faf0259a652bd4b968",
+      "spacing-scale.spacing-adjust": "fd2e08ecd8f84115c38f412989f8e6b242e03c3f",
       "spacing-scale.spacing-scale": "c994166f73c6f7b28825274d4096676a546c87a1",
       "sizing-scale.1": "ea4272528c0ce8b08306d4e75c168ca6bf97f777",
       "sizing-scale.2": "34c8edf92157c7f8db4af49698503c87cef9d7a3",
@@ -60,7 +64,10 @@
       "sizing-scale.22": "07d839dbedc67bd7397eccb55c77887e6cdd59eb",
       "sizing-scale.26": "63cda43068ef29f10993fc333c0ce0194b381a02",
       "sizing-scale.30": "2adbf1fb49ae41b4907c33a12a558e7bdd398331",
-      "sizing-scale.sizing-scale-base": "0d3d8798ea1a2e08ddf5867553154e3d8a956ed3"
+      "sizing-scale.sizing-scale-base": "0d3d8798ea1a2e08ddf5867553154e3d8a956ed3",
+      "sizing-scale.sizing-scale-min": "104c0e778c091f4934a62ad4ad271e31eb6cb84b",
+      "sizing-scale.sizing-adjust": "87b3f4a5ff2a8a5e30657b8153d28f6372a3b935",
+      "sizing-scale.sizing-scale": "ffe80aed7d3dd572495dadb3362befcf94113b3d"
     },
     "group": "Size"
   },
@@ -69,7 +76,8 @@
     "name": "small",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "primitives/size/small": "enabled"
+      "primitives/size/small": "enabled",
+      "primitives/size/extra-large": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36248:20757",
     "$figmaModeId": "36248:1",
@@ -105,6 +113,9 @@
       "spacing-scale.22": "9874e9862d3fa9146fa76e4999f8e95c1422bf4c",
       "spacing-scale.26": "857ee1450bb913e6fffad941cff08288c4b78c4a",
       "spacing-scale.30": "2a21baa3250c374b531e8a6de969ce6fe08233c8",
+      "spacing-scale.spacing-scale-base": "ab8e94510bbc90da7b24bea99bfe11bea4df7433",
+      "spacing-scale.spacing-scale-min": "251911275a3762405e8ba7faf0259a652bd4b968",
+      "spacing-scale.spacing-adjust": "fd2e08ecd8f84115c38f412989f8e6b242e03c3f",
       "spacing-scale.spacing-scale": "c994166f73c6f7b28825274d4096676a546c87a1",
       "sizing-scale.1": "ea4272528c0ce8b08306d4e75c168ca6bf97f777",
       "sizing-scale.2": "34c8edf92157c7f8db4af49698503c87cef9d7a3",
@@ -125,7 +136,10 @@
       "sizing-scale.22": "07d839dbedc67bd7397eccb55c77887e6cdd59eb",
       "sizing-scale.26": "63cda43068ef29f10993fc333c0ce0194b381a02",
       "sizing-scale.30": "2adbf1fb49ae41b4907c33a12a558e7bdd398331",
-      "sizing-scale.sizing-scale-base": "0d3d8798ea1a2e08ddf5867553154e3d8a956ed3"
+      "sizing-scale.sizing-scale-base": "0d3d8798ea1a2e08ddf5867553154e3d8a956ed3",
+      "sizing-scale.sizing-scale-min": "104c0e778c091f4934a62ad4ad271e31eb6cb84b",
+      "sizing-scale.sizing-adjust": "87b3f4a5ff2a8a5e30657b8153d28f6372a3b935",
+      "sizing-scale.sizing-scale": "ffe80aed7d3dd572495dadb3362befcf94113b3d"
     },
     "group": "Size"
   },
@@ -138,7 +152,8 @@
       "primitives/modes/colors/light/theme": "enabled",
       "primitives/modes/colors/light/theme2": "enabled",
       "primitives/modes/colors/light/theme3": "enabled",
-      "primitives/modes/colors/light/theme4": "enabled"
+      "primitives/modes/colors/light/theme4": "enabled",
+      "primitives/size/extra-large": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:34811:5472",
     "$figmaModeId": "34811:0",
@@ -545,7 +560,8 @@
       "primitives/modes/colors/dark/theme": "enabled",
       "primitives/modes/colors/dark/theme2": "enabled",
       "primitives/modes/colors/dark/theme3": "enabled",
-      "primitives/modes/colors/dark/theme4": "enabled"
+      "primitives/modes/colors/dark/theme4": "enabled",
+      "primitives/size/extra-large": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:34811:5472",
     "$figmaModeId": "34811:1",
@@ -951,7 +967,8 @@
       "primitives/modes/typography/primary/theme": "enabled",
       "primitives/modes/typography/primary/theme2": "enabled",
       "primitives/modes/typography/primary/theme3": "enabled",
-      "primitives/modes/typography/primary/theme4": "enabled"
+      "primitives/modes/typography/primary/theme4": "enabled",
+      "primitives/size/extra-large": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36248:20769",
     "$figmaModeId": "36248:2",
@@ -983,7 +1000,8 @@
       "primitives/modes/typography/secondary/theme": "enabled",
       "primitives/modes/typography/secondary/theme2": "enabled",
       "primitives/modes/typography/secondary/theme3": "enabled",
-      "primitives/modes/typography/secondary/theme4": "enabled"
+      "primitives/modes/typography/secondary/theme4": "enabled",
+      "primitives/size/extra-large": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36248:20769",
     "$figmaModeId": "36248:3",
@@ -1012,7 +1030,8 @@
     "name": "digdir",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "themes/theme": "enabled"
+      "themes/theme": "enabled",
+      "primitives/size/extra-large": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36528:61712",
     "$figmaModeId": "36528:0",
@@ -1104,7 +1123,8 @@
     "name": "altinn",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "themes/theme2": "enabled"
+      "themes/theme2": "enabled",
+      "primitives/size/extra-large": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36528:61712",
     "$figmaModeId": "36528:1",
@@ -1196,7 +1216,8 @@
     "name": "uutilsynet",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "themes/theme3": "enabled"
+      "themes/theme3": "enabled",
+      "primitives/size/extra-large": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36528:61712",
     "$figmaModeId": "36528:2",
@@ -1627,7 +1648,8 @@
       "shadow.xl": "S:12d1833dd64569353680aa00c9d340d6f770698f,"
     },
     "selectedTokenSets": {
-      "themes/theme4": "enabled"
+      "themes/theme4": "enabled",
+      "primitives/size/extra-large": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:36528:61712",
     "$figmaModeId": "36528:3",
@@ -1758,7 +1780,8 @@
     "selectedTokenSets": {
       "semantic/style": "enabled",
       "semantic/color": "enabled",
-      "primitives/globals": "source"
+      "primitives/globals": "source",
+      "primitives/size/extra-large": "disabled"
     },
     "$figmaCollectionId": "VariableCollectionId:34811:5976",
     "$figmaModeId": "34811:5",
@@ -1959,7 +1982,8 @@
     "name": "large",
     "$figmaStyleReferences": {},
     "selectedTokenSets": {
-      "primitives/size/large": "enabled"
+      "primitives/size/large": "enabled",
+      "primitives/size/extra-large": "disabled"
     },
     "group": "Size",
     "$figmaCollectionId": "VariableCollectionId:36248:20757",
@@ -1996,6 +2020,9 @@
       "spacing-scale.22": "9874e9862d3fa9146fa76e4999f8e95c1422bf4c",
       "spacing-scale.26": "857ee1450bb913e6fffad941cff08288c4b78c4a",
       "spacing-scale.30": "2a21baa3250c374b531e8a6de969ce6fe08233c8",
+      "spacing-scale.spacing-scale-base": "ab8e94510bbc90da7b24bea99bfe11bea4df7433",
+      "spacing-scale.spacing-scale-min": "251911275a3762405e8ba7faf0259a652bd4b968",
+      "spacing-scale.spacing-adjust": "fd2e08ecd8f84115c38f412989f8e6b242e03c3f",
       "spacing-scale.spacing-scale": "c994166f73c6f7b28825274d4096676a546c87a1",
       "sizing-scale.1": "ea4272528c0ce8b08306d4e75c168ca6bf97f777",
       "sizing-scale.2": "34c8edf92157c7f8db4af49698503c87cef9d7a3",
@@ -2016,7 +2043,19 @@
       "sizing-scale.22": "07d839dbedc67bd7397eccb55c77887e6cdd59eb",
       "sizing-scale.26": "63cda43068ef29f10993fc333c0ce0194b381a02",
       "sizing-scale.30": "2adbf1fb49ae41b4907c33a12a558e7bdd398331",
-      "sizing-scale.sizing-scale-base": "0d3d8798ea1a2e08ddf5867553154e3d8a956ed3"
+      "sizing-scale.sizing-scale-base": "0d3d8798ea1a2e08ddf5867553154e3d8a956ed3",
+      "sizing-scale.sizing-scale-min": "104c0e778c091f4934a62ad4ad271e31eb6cb84b",
+      "sizing-scale.sizing-adjust": "87b3f4a5ff2a8a5e30657b8153d28f6372a3b935",
+      "sizing-scale.sizing-scale": "ffe80aed7d3dd572495dadb3362befcf94113b3d"
     }
+  },
+  {
+    "id": "dc9cc2351333a577664060eab3178907296b92cd",
+    "name": "extra large",
+    "$figmaStyleReferences": {},
+    "selectedTokenSets": {
+      "primitives/size/extra-large": "enabled"
+    },
+    "group": "Size"
   }
 ]

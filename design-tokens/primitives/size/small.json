@@ -60,7 +60,7 @@
     },
     "font-size": {
       "$type": "fontSizes",
-      "$value": "16"
+      "$value": "14"
     }
   },
   "letter-spacing": {
@@ -210,7 +210,7 @@
     },
     "4": {
       "$type": "sizing",
-      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 4 + {sizing-scale.sizing-adjust})"
+      "$value": "({sizing-scale.sizing-scale}  - {sizing-scale.sizing-adjust}) * 4 + {sizing-scale.sizing-adjust}"
     },
     "5": {
       "$type": "sizing",

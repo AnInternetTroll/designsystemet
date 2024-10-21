@@ -60,7 +60,7 @@
     },
     "font-size": {
       "$type": "fontSizes",
-      "$value": "18"
+      "$value": "16"
     }
   },
   "letter-spacing": {
