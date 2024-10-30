@@ -6,7 +6,7 @@
   --dsc-card-border-color: var(--ds-color-neutral-border-subtle);
   --dsc-card-color: var(--ds-color-neutral-text-default);
 
-  &[data-color]:where(:not([data-color='subtle'])) {
+  &[data-color] {
     --dsc-card-background--active: var(--ds-color-surface-default);
     --dsc-card-background--hover: var(--ds-color-background-subtle);
     --dsc-card-background: var(--ds-color-surface-default);
@@ -16,8 +16,11 @@
   &[data-color='neutral'] {
     --dsc-card-background: var(--ds-color-background-default);
   }
-  &[data-color='subtle'] {
-    --dsc-card-background: var(--ds-color-neutral-background-subtle);
+  &[data-subtle=''],
+  &[data-subtle='true'] {
+    --dsc-card-background--active: var(--ds-color-surface-hover);
+    --dsc-card-background--hover: var(--ds-color-surface-default);
+    --dsc-card-background: var(--ds-color-background-subtle);
   }
 
   --dsc-card-border: 1px solid var(--dsc-card-border-color);

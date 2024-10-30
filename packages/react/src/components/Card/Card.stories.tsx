@@ -65,7 +65,7 @@ export const Variants: StoryFn<typeof Card> = () => (
         </Paragraph>
       </Card.Block>
     </Card>
-    <Card color='subtle'>
+    <Card color='neutral' subtle>
       <Card.Block>
         <img src={cat2} alt='katt' />
       </Card.Block>

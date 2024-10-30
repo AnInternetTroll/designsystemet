@@ -10,7 +10,16 @@ export type CardProps = {
    * Changes background & border color
    * @default neutral
    */
-  color?: 'subtle' | Color;
+  color?: Color;
+  /**
+   * Uses more subtle versions of the selected color
+   * @default false
+   */
+  subtle?: boolean;
+  /**
+   * Change the default rendered element for the one passed as a child, merging their props and behavior.
+   * @default false
+   */
   asChild?: boolean;
   /** Instances of `Card.Block`, `Divider` or other React nodes */
   children: ReactNode;
@@ -26,7 +35,7 @@ export type CardProps = {
  * </Card>
  */
 export const Card = forwardRef<HTMLDivElement, CardProps>(function Card(
-  { asChild = false, color = 'neutral', className, ...rest },
+  { asChild = false, color = 'neutral', subtle = false, className, ...rest },
   ref,
 ) {
   const Component = asChild ? Slot : 'div';
@@ -55,6 +64,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(function Card(
     <Component
       className={cl(`ds-card`, className)}
       data-color={color}
+      data-subtle={subtle}
       ref={mergedRefs}
       {...rest}
     />
