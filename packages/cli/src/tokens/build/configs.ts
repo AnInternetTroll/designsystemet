@@ -17,7 +17,7 @@ import type {
   ThemePermutation,
 } from './types.js';
 import { type ProcessedThemeObject, getMultidimensionalThemes } from './utils/getMultidimensionalThemes.js';
-import { isColorCategoryToken, pathStartsWithOneOf, typeEquals } from './utils/utils.js';
+import { isColorCategoryToken, isSemanticToken, pathStartsWithOneOf, typeEquals } from './utils/utils.js';
 
 void register(StyleDictionary, { withSDBuiltins: false });
 /** Use official W3C design token format
@@ -107,9 +107,13 @@ const colorModeVariables: GetStyleDictionaryConfig = ({ mode = 'light', theme },
   };
 };
 
+type opts = { category: ColorCategories } | { category: 'builtin'; color: string };
+
 const colorCategoryVariables =
-  (category: ColorCategories): GetStyleDictionaryConfig =>
-  ({ mode, theme, [`${category}-color` as const]: color }, { outPath }) => {
+  (opts: opts): GetStyleDictionaryConfig =>
+  ({ mode, theme, ...permutation }, { outPath }) => {
+    const color = opts.category === 'builtin' ? opts.color : permutation[`${opts.category}-color`];
+
     const layer = `ds.theme.color`;
     const isDefault = color === buildOptions?.accentColor;
     const selector = `${isDefault ? ':root, ' : ''}[data-color="${color}"]`;
@@ -133,7 +137,10 @@ const colorCategoryVariables =
             {
               destination: `color/${color}.css`,
               format: formats.colorcategory.name,
-              filter: (token) => isColorCategoryToken(token, category),
+              filter: (token) =>
+                opts.category === 'builtin'
+                  ? isSemanticToken(token) && R.startsWith(['color', color], token.path)
+                  : isColorCategoryToken(token, opts.category),
             },
           ],
           options: {
@@ -291,8 +298,13 @@ const typographyVariables: GetStyleDictionaryConfig = ({ theme, typography }, { 
 
 export const configs = {
   colorModeVariables,
-  mainColorVariables: colorCategoryVariables('main'),
-  supportColorVariables: colorCategoryVariables('support'),
+  mainColorVariables: colorCategoryVariables({ category: 'main' }),
+  supportColorVariables: colorCategoryVariables({ category: 'support' }),
+  neutralColorVariables: colorCategoryVariables({ category: 'builtin', color: 'neutral' }),
+  successColorVariables: colorCategoryVariables({ category: 'builtin', color: 'success' }),
+  dangerColorVariables: colorCategoryVariables({ category: 'builtin', color: 'danger' }),
+  warningColorVariables: colorCategoryVariables({ category: 'builtin', color: 'warning' }),
+  infoColorVariables: colorCategoryVariables({ category: 'builtin', color: 'info' }),
   typographyVariables,
   semanticVariables,
   typescriptTokens,

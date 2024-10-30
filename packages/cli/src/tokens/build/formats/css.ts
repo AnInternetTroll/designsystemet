@@ -70,10 +70,19 @@ const colorcategory: Format = {
         format: 'css',
         usesDtcg,
       }),
-      (token: TransformedToken) => ({
-        ...token,
-        name: token.name.replace(new RegExp(`-(${colorCategories.main}|${colorCategories.support})-`), '-'),
-      }),
+
+      (token: TransformedToken) => {
+        return {
+          ...token,
+          name: token.name.replace(/color-\w+-/, 'color-'),
+          original: {
+            ...token.original,
+            $value: new RegExp(`color-(${colorCategories.main}|${colorCategories.support})-`).test(token.name)
+              ? token.original.$value
+              : `{${token.path.join('.')}}`,
+          },
+        };
+      },
     );
 
     const formattedTokens = dictionary.allTokens.map(format).join('\n');
