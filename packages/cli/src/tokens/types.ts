@@ -41,3 +41,8 @@ export type File = {
 };
 
 export type Collection = string | 'global';
+export type CreateTokensOptions = {
+  colors: Colors;
+  typography: Typography;
+  themeName: string;
+};
