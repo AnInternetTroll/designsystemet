@@ -1,6 +1,7 @@
 import { useArgs } from '@storybook/preview-api';
 import type { Meta, StoryFn } from '@storybook/react';
 
+import { useRef } from 'react';
 import { Pagination, type UsePaginationProps, usePagination } from '.';
 import type { Size } from '../../types';
 
@@ -12,14 +13,20 @@ export default {
 export const Preview: StoryFn<UsePaginationProps & { 'data-size'?: Size }> = (
   args,
 ) => {
+  const paginationRef = useRef<HTMLElement | null>(null);
   const [, updateArgs] = useArgs();
   const { pages, nextButtonProps, prevButtonProps } = usePagination({
     ...args,
     setCurrentPage: (currentPage) => updateArgs({ currentPage }),
+    ref: paginationRef,
   });
 
   return (
-    <Pagination aria-label='Sidenavigering' data-size={args['data-size']}>
+    <Pagination
+      aria-label='Sidenavigering'
+      data-size={args['data-size']}
+      ref={paginationRef}
+    >
       <Pagination.List>
         <Pagination.Item>
           <Pagination.Button aria-label='Forrige side' {...prevButtonProps}>

@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { MouseEvent } from 'react';
 import type { PaginationButtonProps } from './PaginationButton';
 
@@ -39,6 +39,7 @@ export type UsePaginationProps = {
    * @default 1
    */
   showPages?: number;
+  ref?: React.MutableRefObject<HTMLElement | null>;
 };
 
 /** Hook to help manage pagination state */
@@ -48,8 +49,49 @@ export const usePagination = ({
   onChange,
   totalPages,
   showPages = 7,
-}: UsePaginationProps) =>
-  useMemo(() => {
+  ref
+}: UsePaginationProps) => {
+  const [showAdjusted, setShowAdjusted] = useState(showPages);
+
+  // Observe pagination resize
+  useEffect(() => {
+      if (!ref?.current) return;
+      let debounce: ReturnType<typeof setTimeout> | number = 0;
+      const onResizeDebounced = () => {
+        clearTimeout(debounce);
+        debounce = setTimeout(onResize, 100);
+      };
+      const onResize = () => {
+        const items = Array.from(ref.current?.querySelectorAll('li') || []);
+        const first = items[0];
+        const last = items[items.length - 1];
+        let index = 0;
+
+        for(const item of items) item.hidden = false; // Show all items
+        console.log(items);
+        while (last.offsetTop > first.offsetTop) {
+          items[++index].hidden = true;
+        }
+
+        console.log(index);
+
+        // const rects = items.map((item) => item.getBoundingClientRect())
+        // const wrapsAt = rects.findIndex(({ y }) => y !== rects[0].y);
+        // if (wrapsAt > 0) setShowAdjusted(wrapsAt);
+        // console.log(wrapsAt, items, rects);
+      };
+
+      const observer = new ResizeObserver(onResizeDebounced);
+      window.addEventListener('resize', onResizeDebounced);
+      observer.observe(ref.current);
+      return () => {
+        window.removeEventListener('resize', onResizeDebounced);
+        observer.disconnect()
+      };
+  }, []);
+
+  // Return pagination state
+  return useMemo(() => {
     const hasNext = currentPage < totalPages;
     const hasPrev = currentPage !== 1;
     const handleClick = (page: number) => (event: MouseEvent<HTMLElement>) => {
@@ -60,7 +102,7 @@ export const usePagination = ({
 
     return {
       /** Number of steps */
-      pages: getSteps(currentPage, totalPages, showPages).map(
+      pages: getSteps(currentPage, totalPages, showAdjusted).map(
         (page, index) => ({
           page: page || '',
           itemKey: page ? `page-${page}` : `ellipsis-${index}`, // React key utility
@@ -89,5 +131,8 @@ export const usePagination = ({
       hasPrev,
       /** Indication if next page action should be shown or not */
       hasNext,
+      /** Ajusted amount of show pages */
+      showPages: showAdjusted
     };
-  }, [currentPage, totalPages, showPages]);
+  }, [currentPage, totalPages, showPages])
+};
