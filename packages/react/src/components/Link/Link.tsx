@@ -1,8 +1,9 @@
+import type { Color } from '@digdir/designsystemet-react/colors';
 import { Slot } from '@radix-ui/react-slot';
 import cl from 'clsx/lite';
 import type { AnchorHTMLAttributes, ReactNode } from 'react';
 import { forwardRef } from 'react';
-import type { Color, DefaultProps } from '../../types';
+import type { DefaultProps } from '../../types';
 
 export type LinkProps = {
   /** The content to display inside the link. */

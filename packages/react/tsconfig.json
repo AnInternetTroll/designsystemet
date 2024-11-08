@@ -1,19 +1,20 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "rootDir": "./src",
     "outDir": "./tsc-build",
-    "declarationDir": "./dist/types",
+    "tsBuildInfoFile": "./tsc-build/tsconfig.tsbuildinfo",
     "emitDeclarationOnly": false,
     "composite": false,
     "allowSyntheticDefaultImports": true,
     "noEmit": false,
-    "incremental": true
+    "incremental": true,
+    "types": [
+      "./declarations.d.ts",
+      "../theme/brand/types.d.ts",
+      "../../apps/storybook/story-utils/type-extensions.d.ts"
+    ]
   },
-  "include": [
-    "./src",
-    "./stories",
-    "declarations.d.ts",
-    "../../apps/storybook/story-utils/type-extensions.d.ts"
-  ],
-  "rootDir": "./src"
+  "include": ["./src"],
+  "exclude": ["./dist", "./src/**/*.stories.ts*", "./src/**/*.test.ts*"]
 }

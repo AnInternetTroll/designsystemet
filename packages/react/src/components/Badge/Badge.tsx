@@ -1,6 +1,7 @@
+import type { Color } from '@digdir/designsystemet-react/colors';
 import cl from 'clsx/lite';
 import { type HTMLAttributes, type ReactNode, forwardRef } from 'react';
-import type { Color, DefaultProps } from '../../types';
+import type { DefaultProps } from '../../types';
 
 export type BadgeProps = {
   /**

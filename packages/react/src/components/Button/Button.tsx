@@ -1,8 +1,9 @@
+import type { Color } from '@digdir/designsystemet-react/colors';
 import { Slot, Slottable } from '@radix-ui/react-slot';
 import cl from 'clsx/lite';
 import { forwardRef } from 'react';
 import type { ButtonHTMLAttributes } from 'react';
-import type { Color, DefaultProps } from '../../types';
+import type { DefaultProps } from '../../types';
 import { Spinner } from '../loaders/Spinner';
 
 export type ButtonProps = {

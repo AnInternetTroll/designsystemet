@@ -1,14 +1,5 @@
+import type { Color } from '@digdir/designsystemet-react/colors';
 export type Size = 'sm' | 'md' | 'lg';
-export type Color =
-  | 'accent'
-  | 'neutral'
-  | 'brand1'
-  | 'brand2'
-  | 'brand3'
-  | 'info'
-  | 'success'
-  | 'warning'
-  | 'danger';
 
 export type PortalProps = {
   /**
@@ -21,4 +12,5 @@ export type PortalProps = {
 
 export type DefaultProps = {
   'data-size'?: Size;
+  'data-color'?: Color;
 };

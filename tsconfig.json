@@ -8,7 +8,9 @@
         "apps/storybook/docs-components",
         "apps/storybook/docs-components/*"
       ],
-      "@assets/*": ["apps/storybook/assets/*"]
+      "@assets/*": ["apps/storybook/assets/*"],
+      "@digdir/designsystemet-react": ["packages/react/src/index.ts"],
+      "@digdir/designsystemet-react/colors": ["packages/react/src/colors.ts"]
     },
     "target": "ES2022",
     "module": "ESNext",

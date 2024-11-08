@@ -2,7 +2,7 @@ import { useMergeRefs } from '@floating-ui/react';
 import cl from 'clsx/lite';
 import { type ComponentPropsWithoutRef, forwardRef } from 'react';
 
-import type { Color } from 'packages/react/src/types';
+import type { Color } from '@digdir/designsystemet-react/colors';
 import { useSynchronizedAnimation } from '../../../utilities';
 
 export type SpinnerProps = {

@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "tsBuildInfoFile": "./tsc-build/tsconfig.storybook.tsbuildinfo",
+    "composite": false,
+    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
+    "incremental": false,
+    "types": [
+      "./declarations.d.ts",
+      "../theme/brand/types.d.ts",
+      "../../apps/storybook/story-utils/type-extensions.d.ts"
+    ]
+  },
+  "include": ["./stories", "/src/**/*.stories.ts*"],
+  "exclude": ["./dist"]
+}

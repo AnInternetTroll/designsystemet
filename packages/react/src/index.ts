@@ -9,3 +9,5 @@ export {
   getPrevFocusableValue,
   omit,
 } from './utilities';
+
+import './colors';

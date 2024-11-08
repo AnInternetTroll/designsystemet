@@ -7,9 +7,9 @@ import * as R from 'ramda';
 import StyleDictionary from 'style-dictionary';
 
 import { configs, getConfigsForThemeDimensions } from './build/configs.js';
-import type { BuildConfig, ThemePermutation } from './build/types.js';
+import { type BuildConfig, type ThemePermutation, colorCategories } from './build/types.js';
 import { makeEntryFile } from './build/utils/entryfile.js';
-import { processThemeObject } from './build/utils/getMultidimensionalThemes.js';
+import { type ProcessedThemeObject, processThemeObject } from './build/utils/getMultidimensionalThemes.js';
 
 type Options = {
   /** Design tokens path */
@@ -108,7 +108,7 @@ export async function buildTokens(options: Options): Promise<void> {
         console.log(`\n🍱 Building ${chalk.green(buildConfig.name ?? key)}`);
 
         if (buildConfig.build) {
-          return await buildConfig.build(sdConfigs, { outPath, tokensDir, ...buildConfig.options });
+          await buildConfig.build(sdConfigs, { outPath, tokensDir, ...buildConfig.options });
         }
         await Promise.all(
           sdConfigs.map(async ({ config, permutation }) => {
@@ -131,4 +131,25 @@ export async function buildTokens(options: Options): Promise<void> {
     }
     throw err;
   }
+
+  await writeColorTypeDeclaration($themes, outPath);
+}
+
+async function writeColorTypeDeclaration($themes: ProcessedThemeObject[], outPath: string) {
+  const customColors = $themes
+    .filter(
+      (x) => x.group && [colorCategories.main, colorCategories.support].map((c) => `${c}-color`).includes(x.group),
+    )
+    .map((x) => x.name);
+  const typeDeclaration = `
+import type { CustomColors as BaseCustomColors } from '@digdir/designsystemet-react/colors';
+
+declare module '@digdir/designsystemet-react/colors' {
+  export interface CustomColors extends BaseCustomColors {
+${customColors.map((color) => `    ${color}: never;`).join('\n')}
+  }
+}
+`.trimStart();
+  console.log(typeDeclaration);
+  await fs.writeFile(path.resolve(outPath, 'types.d.ts'), typeDeclaration, 'utf-8');
 }
