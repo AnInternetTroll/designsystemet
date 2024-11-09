@@ -1,4 +1,3 @@
-import type { Color } from '@digdir/designsystemet-react/colors';
 import { Slot } from '@radix-ui/react-slot';
 import cl from 'clsx/lite';
 import { Fragment, forwardRef } from 'react';
@@ -9,12 +8,6 @@ export type AvatarProps = {
    * The name of the person the avatar represents.
    */
   'aria-label': string;
-  /**
-   * The color of the avatar.
-   *
-   * @default 'accent'
-   */
-  color?: Color;
   /**
    * The size of the avatar.
    */
@@ -56,7 +49,6 @@ export type AvatarProps = {
 export const Avatar = forwardRef<HTMLSpanElement, AvatarProps>(function Avatar(
   {
     'aria-label': ariaLabel,
-    color,
     variant = 'circle',
     className,
     children,
@@ -73,7 +65,6 @@ export const Avatar = forwardRef<HTMLSpanElement, AvatarProps>(function Avatar(
       ref={ref}
       className={cl('ds-avatar', className)}
       data-variant={variant}
-      data-color={color}
       data-initials={initials}
       role='img'
       aria-label={ariaLabel}

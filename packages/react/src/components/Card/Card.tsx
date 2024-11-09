@@ -10,7 +10,7 @@ export type CardProps = {
    * Changes background & border color
    * @default neutral
    */
-  color?: 'subtle' | Color;
+  'data-color'?: 'subtle' | Color;
   asChild?: boolean;
   /** Instances of `Card.Block`, `Divider` or other React nodes */
   children: ReactNode;
@@ -26,7 +26,7 @@ export type CardProps = {
  * </Card>
  */
 export const Card = forwardRef<HTMLDivElement, CardProps>(function Card(
-  { asChild = false, color = 'neutral', className, ...rest },
+  { asChild = false, 'data-color': color = 'neutral', className, ...rest },
   ref,
 ) {
   const Component = asChild ? Slot : 'div';

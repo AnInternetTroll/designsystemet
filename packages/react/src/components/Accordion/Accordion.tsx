@@ -8,7 +8,7 @@ export type AccordionProps = {
    * Accordion background color
    * @default neutral
    */
-  color?: 'subtle' | Color;
+  'data-color'?: 'subtle' | Color;
   /**
    * Show border
    * @default false
@@ -23,7 +23,7 @@ export type AccordionProps = {
  */
 export const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
   function Accordion(
-    { border = false, color = 'neutral', className, ...rest },
+    { border = false, 'data-color': color = 'neutral', className, ...rest },
     ref,
   ) {
     return (

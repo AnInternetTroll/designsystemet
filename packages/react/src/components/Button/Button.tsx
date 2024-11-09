@@ -1,4 +1,3 @@
-import type { Color } from '@digdir/designsystemet-react/colors';
 import { Slot, Slottable } from '@radix-ui/react-slot';
 import cl from 'clsx/lite';
 import { forwardRef } from 'react';
@@ -12,10 +11,6 @@ export type ButtonProps = {
    * @default primary
    */
   variant?: 'primary' | 'secondary' | 'tertiary';
-  /** Specify which color palette to use
-   * @default accent
-   */
-  color?: Color;
   /** Toggle icon only styling, pass icon as children
    * @default false
    */
@@ -48,7 +43,6 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       asChild,
       className,
       children,
-      color,
       icon = false,
       loading = false,
       variant = 'primary',
@@ -63,7 +57,6 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <Component
         aria-busy={Boolean(loading) || undefined}
         className={cl('ds-button', className)}
-        data-color={color}
         data-icon={icon || undefined}
         data-variant={variant}
         ref={ref}

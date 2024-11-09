@@ -1,4 +1,4 @@
-import type { Color } from '@digdir/designsystemet-react/colors';
+import type { StateColors } from '@digdir/designsystemet-react/colors';
 import cl from 'clsx/lite';
 import type { HTMLAttributes } from 'react';
 import { forwardRef } from 'react';
@@ -9,7 +9,7 @@ export type AlertProps = {
    * Sets color and icon.
    * @default info
    */
-  color?: Color;
+  'data-color'?: StateColors;
 } & HTMLAttributes<HTMLDivElement> &
   DefaultProps;
 
@@ -19,7 +19,7 @@ export type AlertProps = {
  * <Alert color='info'>Dette er en informasjonsmelding</Alert>
  */
 export const Alert = forwardRef<HTMLDivElement, AlertProps>(function Alert(
-  { color = 'info', className, ...rest },
+  { 'data-color': color = 'info', className, ...rest },
   ref,
 ) {
   return (

@@ -12,5 +12,8 @@ export type PortalProps = {
 
 export type DefaultProps = {
   'data-size'?: Size;
+  /**
+   * Specify which color palette to use. If unset, inherits from the nearest ancestor with data-color
+   */
   'data-color'?: Color;
 };

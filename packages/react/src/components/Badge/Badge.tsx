@@ -1,15 +1,8 @@
-import type { Color } from '@digdir/designsystemet-react/colors';
 import cl from 'clsx/lite';
 import { type HTMLAttributes, type ReactNode, forwardRef } from 'react';
 import type { DefaultProps } from '../../types';
 
 export type BadgeProps = {
-  /**
-   * The color of the badge
-   *
-   * @default accent
-   */
-  color?: Color;
   /**
    * The number to display in the badge
    */
@@ -55,7 +48,6 @@ export type BadgeProps = {
 export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(function Badge(
   {
     className,
-    color,
     count,
     maxCount,
     overlap = 'rectangle',
@@ -67,7 +59,6 @@ export const Badge = forwardRef<HTMLSpanElement, BadgeProps>(function Badge(
   return (
     <span
       className={cl('ds-badge', className)}
-      data-color={color}
       data-count={
         count && maxCount && count > maxCount ? `${maxCount}+` : count
       }
