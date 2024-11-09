@@ -131,7 +131,7 @@ export const Controlled: StoryFn<typeof Popover> = () => {
       <Popover open={open} onClose={() => setOpen(false)}>
         <Paragraph>Er du sikker på at du vil slette?</Paragraph>
         <Button
-          color='danger'
+          data-color='danger'
           onClick={() => setOpen(false)}
           data-size='sm'
           style={{ marginTop: 'var(--ds-spacing-2)' }}
@@ -159,7 +159,7 @@ export const WithoutContext: StoryFn<typeof Popover> = () => {
       <Popover id='my-popover' open={open} onClose={() => setOpen(false)}>
         <Paragraph>Er du sikker på at du vil slette?</Paragraph>
         <Button
-          color='danger'
+          data-color='danger'
           onClick={() => setOpen(false)}
           data-size='sm'
           style={{ marginTop: 'var(--ds-spacing-2)' }}

@@ -2,21 +2,26 @@ import type { Color } from '@digdir/designsystemet-react/colors';
 import cl from 'clsx/lite';
 import type { HTMLAttributes, ReactNode } from 'react';
 import { forwardRef } from 'react';
+import type { DefaultProps } from '../../types';
+import type { Merge } from '../../utilities';
 
-export type AccordionProps = {
-  /**
-   * Accordion background color
-   * @default neutral
-   */
-  'data-color'?: 'subtle' | Color;
-  /**
-   * Show border
-   * @default false
-   **/
-  border?: boolean;
-  /** Instances of `Accordion.Item` */
-  children: ReactNode;
-} & HTMLAttributes<HTMLDivElement>;
+export type AccordionProps = Merge<
+  DefaultProps & HTMLAttributes<HTMLDivElement>,
+  {
+    /**
+     * Accordion background color
+     * @default neutral
+     */
+    'data-color'?: 'subtle' | Color;
+    /**
+     * Show border
+     * @default false
+     **/
+    border?: boolean;
+    /** Instances of `Accordion.Item` */
+    children: ReactNode;
+  }
+>;
 
 /**
  * Accordion component, contains `Accordion.Item` components.

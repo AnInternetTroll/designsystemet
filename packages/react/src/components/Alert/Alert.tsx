@@ -4,14 +4,13 @@ import type { HTMLAttributes } from 'react';
 import { forwardRef } from 'react';
 import type { DefaultProps } from '../../types';
 
-export type AlertProps = {
+export type AlertProps = DefaultProps & {
   /**
    * Sets color and icon.
    * @default info
    */
   'data-color'?: StateColors;
-} & HTMLAttributes<HTMLDivElement> &
-  DefaultProps;
+} & HTMLAttributes<HTMLDivElement>;
 
 /**
  * Alerts are used to inform users about important information, warnings, errors, or success.

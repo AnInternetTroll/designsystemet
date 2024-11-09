@@ -3,34 +3,37 @@ import cl from 'clsx/lite';
 import { forwardRef } from 'react';
 import type { ButtonHTMLAttributes } from 'react';
 import type { DefaultProps } from '../../types';
+import type { Merge } from '../../utilities';
 import { Spinner } from '../loaders/Spinner';
 
-export type ButtonProps = {
-  /**
-   * Specify which variant to use
-   * @default primary
-   */
-  variant?: 'primary' | 'secondary' | 'tertiary';
-  /** Toggle icon only styling, pass icon as children
-   * @default false
-   */
-  icon?: boolean;
-  /** Toggle loading state
-   * @default false
-   */
-  loading?: boolean;
-  /**
-   * Change the default rendered element for the one passed as a child, merging their props and behavior.
-   * @default false
-   */
-  asChild?: boolean;
-  /**
-   * Specify the type of button. Unset when `asChild` is true
-   * @default 'button'
-   */
-  type?: ButtonHTMLAttributes<HTMLButtonElement>['type'];
-} & Omit<ButtonHTMLAttributes<HTMLButtonElement>, 'type'> &
-  DefaultProps;
+export type ButtonProps = Merge<
+  DefaultProps & ButtonHTMLAttributes<HTMLButtonElement>,
+  {
+    /**
+     * Specify which variant to use
+     * @default primary
+     */
+    variant?: 'primary' | 'secondary' | 'tertiary';
+    /** Toggle icon only styling, pass icon as children
+     * @default false
+     */
+    icon?: boolean;
+    /** Toggle loading state
+     * @default false
+     */
+    loading?: boolean;
+    /**
+     * Change the default rendered element for the one passed as a child, merging their props and behavior.
+     * @default false
+     */
+    asChild?: boolean;
+    /**
+     * Specify the type of button. Unset when `asChild` is true
+     * @default 'button'
+     */
+    type?: ButtonHTMLAttributes<HTMLButtonElement>['type'];
+  }
+>;
 
 /**
  * Button used for interaction

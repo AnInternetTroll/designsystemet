@@ -2,33 +2,38 @@ import { Slot } from '@radix-ui/react-slot';
 import cl from 'clsx/lite';
 import { Fragment, forwardRef } from 'react';
 import type { HTMLAttributes, ReactNode } from 'react';
+import type { DefaultProps, Size } from '../../types';
+import type { Merge } from '../../utilities';
 
-export type AvatarProps = {
-  /**
-   * The name of the person the avatar represents.
-   */
-  'aria-label': string;
-  /**
-   * The size of the avatar.
-   */
-  'data-size'?: 'xs' | 'sm' | 'md' | 'lg';
-  /**
-   * The shape of the avatar.
-   *
-   * @default 'circle'
-   */
-  variant?: 'circle' | 'square';
-  /**
-   * Initials to display inside the avatar.
-   */
-  initials?: string;
-  /**
-   * Image, icon or initials to display inside the avatar.
-   *
-   * Gets `aria-hidden="true"`
-   */
-  children?: ReactNode;
-} & Omit<HTMLAttributes<HTMLSpanElement>, 'aria-label'>;
+export type AvatarProps = Merge<
+  DefaultProps & HTMLAttributes<HTMLSpanElement>,
+  {
+    /**
+     * The name of the person the avatar represents.
+     */
+    'aria-label': string;
+    /**
+     * The size of the avatar.
+     */
+    'data-size'?: 'xs' | Size;
+    /**
+     * The shape of the avatar.
+     *
+     * @default 'circle'
+     */
+    variant?: 'circle' | 'square';
+    /**
+     * Initials to display inside the avatar.
+     */
+    initials?: string;
+    /**
+     * Image, icon or initials to display inside the avatar.
+     *
+     * Gets `aria-hidden="true"`
+     */
+    children?: ReactNode;
+  }
+>;
 
 /**
  * Avatars are used to represent people or entities.

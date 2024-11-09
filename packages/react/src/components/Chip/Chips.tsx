@@ -3,6 +3,7 @@ import cl from 'clsx/lite';
 import { forwardRef } from 'react';
 import type { ButtonHTMLAttributes, InputHTMLAttributes } from 'react';
 import type { DefaultProps } from '../../types';
+import type { Merge } from '../../utilities';
 import { Input } from '../form/Input';
 
 type ChipBaseProps = {
@@ -15,10 +16,14 @@ type ChipBaseProps = {
 
 export type ChipRemovableProps = ChipButtonProps;
 export type ChipRadioProps = ChipCheckboxProps;
-export type ChipButtonProps = ChipBaseProps &
-  ButtonHTMLAttributes<HTMLButtonElement>;
-export type ChipCheckboxProps = ChipBaseProps &
-  Omit<InputHTMLAttributes<HTMLInputElement>, 'type' | 'size'>;
+export type ChipButtonProps = Merge<
+  ButtonHTMLAttributes<HTMLButtonElement>,
+  ChipBaseProps
+>;
+export type ChipCheckboxProps = Merge<
+  Omit<InputHTMLAttributes<HTMLInputElement>, 'type' | 'size'>,
+  ChipBaseProps
+>;
 
 /**
  * Chip.Button used for interaction
